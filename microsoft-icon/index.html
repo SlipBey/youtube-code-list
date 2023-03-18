@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Microsoft Icon</title>
+</head>
+<body>
+    <div class="icons">
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+    </div>
+
+    <style>
+        .icons {
+            width: 200px;
+            display: grid;
+            grid-auto-flow: column;
+            grid-template-rows: repeat(2, minmax(0, 1fr));
+            gap: 5px;
+            margin-top: 50px;
+        }
+        .icons {
+            transform-style: perspective;
+            transform: perspective(750px) rotatey(-45deg);
+        }
+        .square {
+            width: 150px;
+            height: 100px;
+        }
+        .square:nth-child(1) {
+            background-color: #f14f21;
+        }
+        .square:nth-child(2) {
+            background-color: #00a3ee;
+        }
+        .square:nth-child(3) {
+            background-color: #7eb900;
+        }
+        .square:nth-child(4) {
+            background-color: #feb800;
+        }
+    </style>
+</body>
+</html>
